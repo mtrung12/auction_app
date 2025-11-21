@@ -1,0 +1,42 @@
+Tên: Ứng dụng đấu giá trực tuyến
+ 
+Mô tả:
+Mỗi người tham gia đấu giá có thể thực hiện các chức năng sau:\
+
+Quản lý người dùng, tạo phòng đấu giá\
+Quản lý việc tham gia đấu giá người dùng, cho phép tham gia một phòng đấu giá. Tại một thời điểm, mỗi người chỉ được tham gia vào 1 phòng đấu giá.\
+Bán vật phẩm. Mỗi phẩm phẩm bán đấu giá cần có thông tin về vật phẩm, giá khởi điểm, thời gian đấu giá, giá bán ngay\
+Xem thông tin những vật phẩm đã đấu giá, thông tin vật phẩm đang và sẽ đấu giá của từng phòng đấu giá\
+Tìm kiếm các vật phẩm đấu giá theo khung giờ hoặc theo thông tin vật phẩm, khi tìm được, cho phép join vào phòng đấu giá và chờ đợi đấu giá hoặc đấu giá (nếu đang diễn ra)\
+Xem thống kê những phiên đấu giá đã tham gia và kết quả\
+Quản lý các vật phẩm trong phòng bán đấu giá theo hàng đợi. Các vật phẩm được đăng bán lần lượt sẽ được giới thiệu trong phiên bán\
+Tổ chức đấu giá. Khi nhận được lệnh đặt giá từ người dùng, server kiểm tra giá đặt có hợp lệ không (lớn hơn giá hiện tại ít nhất 10.000 đồng). Nếu lệnh đặt giá hợp lệ, thông báo giá mới của vật phẩm.\
+Khi thời gian đấu giá còn 30 giây, gửi thông báo đến tất cả những người tham gia đấu giá thời gian sắp hết\
+Nếu có người trả giá mới trong vòng 30 giây cuối, reset thời gian còn lại về 30 giây\
+Nếu có người đặt mua với giá bán ngay, vật phẩm được bán mà không phải qua đấu giá.\
+Bổ sung các chức năng nâng cao khác
+ 
+Tiêu chí chấm điểm:
+Giao diện đồ họa - Xử lý truyền dòng: 1 điểm\
+Cài đặt cơ chế vào/ra socket trên server: 2 điểm\
+Đăng ký và quản lý tài khoản: 2 điểm\
+Đăng nhập và quản lý phiên: 2 điểm\
+Kiểm soát quyền truy cập phòng đấu giá: 1 điểm\
+Tạo phòng đấu giá: 1 điểm\
+Liệt kê phòng đấu giá: 1 điểm\
+Tạo vật phẩm đấu giá: 2 điểm\
+Xóa vật phẩm trong phòng đấu giá: 1 điểm\
+Tham gia phòng đấu giá: 2 điểm\
+Tố giá: 2 điểm\
+Mua trực tiếp: 1 điểm\
+Ghi log hoạt động: 1 điểm\
+Gửi thông báo gần hết  giờ + reset thời gian đấu giá: 2 điểm\
+Các chức năng nâng cao khác: 2 - 10 điểm\
+Giao diện đồ họa: 3 điểm
+
+Tính năng thêm: 
+Chat trong phòng dau gia -> nguoi dung nhap text -> gui len server -> server broadcast cho toan bo phong dau gia
+Redeem money -> nguoi dung chi can nhap so tien va rut tien khoi tai khoan (tien ao, khong co payment system that)
+Deposit money -> nguoi dung nhap so tien roi them tien vao tai khoan -> tang balance cua nguoi dung
+
+Hai tinh nang lien quan den tiền -> thêm 3 trường là số tk, tên ngân hàng và balance
